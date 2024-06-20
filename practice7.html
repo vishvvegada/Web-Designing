@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            width: 25%;
+            float: left;
+            padding: 10px;
+            font-size: 30px;
+        }
+        .div1{
+            background-color: aquamarine;
+        }
+        .div2{
+            background-color: cadetblue;
+        }
+        .div3{
+            background-color:chartreuse;
+        }
+        .div4{
+            background-color:rgb(177, 111, 193);
+        }
+        @media (max-width: 600px) , (orientation:portrait){
+            .div1, .div2, .div3, .div4{
+                width: 100%;
+                font-size: 20px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 900px) {
+            .div1, .div2, .div3, .div4{
+                width: 50%;
+                font-size: 25px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="div1">Hello</div>
+    <div class="div2">World</div>
+    <div class="div3">Hello</div>
+    <div class="div4">World</div>
+</body>
+</html>
